@@ -1,0 +1,67 @@
+:root {
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+  --primary-color: #rgba(247, 20, 186, 0.6);
+  --accent-color: #rgba(1, 214, 106, 0.6);
+  --bg-color: #rgba(21, 148, 246, 0.6);
+  --text-color: #333;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+}
+
+header {
+  background-color: rgba(247, 20, 186, 0.6);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+article {
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(1, 214, 106, 0.6);
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color:rgba(21, 148, 246, 0.6) ;
+}
+.post-content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.blog-image {
+  max-width: 200px;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+.blog-text {
+  flex: 1;
+  min-width: 250px;
+}
